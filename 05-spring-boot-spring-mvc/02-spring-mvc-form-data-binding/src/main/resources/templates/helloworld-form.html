@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World - Input Form</title>
+</head>
+<body>
+    <form th:action="@{/processFormWithRequestParam}" method="GET"><!-- When form is submitted send request to /processForm URL -->
+        <input type="text" name="studentName" placeholder="What's your Name?"/>
+        <input type ="Submit"/><!--when clicked the form data is sent to /processForm -->
+
+    </form>
+</body>
+</html>
